@@ -1,0 +1,62 @@
+Begin in state A.
+Perform a diagnostic checksum after 12586542 steps.
+
+In state A:
+  If the current value is 0:
+    - 1.
+    - right.
+    - B.
+  If the current value is 1:
+    - 0.
+    - left.
+    - B.
+
+In state B:
+  If the current value is 0:
+    - 0.
+    - right.
+    - C.
+  If the current value is 1:
+    - 1.
+    - left.
+    - B.
+
+In state C:
+  If the current value is 0:
+    - 1.
+    - right.
+    - D.
+  If the current value is 1:
+    - 0.
+    - left.
+    - A.
+
+In state D:
+  If the current value is 0:
+    - 1.
+    - left.
+    - E.
+  If the current value is 1:
+    - 1.
+    - left.
+    - F.
+
+In state E:
+  If the current value is 0:
+    - 1.
+    - left.
+    - A.
+  If the current value is 1:
+    - 0.
+    - left.
+    - D.
+
+In state F:
+  If the current value is 0:
+    - 1.
+    - right.
+    - A.
+  If the current value is 1:
+    - 1.
+    - left.
+    - E.
